@@ -8,21 +8,21 @@
    [deps-deploy.deps-deploy :as dd]))
 
 (def lib 'org.tcrawley/cognitect-http-client)
-(def version "1.11.129")
+(def version "1.11.129-jetty-12")
 (def class-dir "target/classes")
 
 (defn- pom-template
   [version]
-  [[:description "Fork of com.cognitect/http-client that uses Jetty 11"]
-   [:url "https://github.com/tobias/cognitect-http-client"]
+  [[:description "Fork of com.cognitect/http-client that uses Jetty 12"]
+   [:url "https://github.com/terjesb/cognitect-http-client"]
    [:licenses
     [:license
      [:name "Apache License, Version 2.0"]
      [:url "http://www.apache.org/licenses/LICENSE-2.0"]]]
    [:scm
-    [:url "https://github.com/tobias/cognitect-http-client"]
-    [:connection "scm:git:https://github.com/tobias/cognitect-http-client.git"]
-    [:developerConnection "scm:git:ssh:git@github.com:tobias/cognitect-http-client.git"]
+    [:url "https://github.com/terjesb/cognitect-http-client"]
+    [:connection "scm:git:https://github.com/terjesb/cognitect-http-client.git"]
+    [:developerConnection "scm:git:ssh:git@github.com:terjesb/cognitect-http-client.git"]
     [:tag (str "v" version)]]])
 
 (def ^:private basis
